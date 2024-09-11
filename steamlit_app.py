@@ -48,13 +48,13 @@ if ingredients_list:
     my_insert_stmt = """ insert into smoothies.public.orders(ingredients,name_on_order)
             values ('""" + ingredients_string + """','""" +name_on_order+ """')"""
 
-    #st.write(my_insert_stmt)
-    #st.stop()
+    st.write(my_insert_stmt)
+    st.stop()
 
-    #time_to_insert = st.button ('Submit order')
-    #if time_to_insert :
-        #session.sql(my_insert_stmt).collect()
-        #st.success("your smoothie is ordered")
+    time_to_insert = st.button ('Submit order')
+    if time_to_insert :
+        session.sql(my_insert_stmt).collect()
+        st.success("your smoothie is ordered")
 
 
 

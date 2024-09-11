@@ -21,3 +21,8 @@ submitted = st.button ('submit')
 
 if submitted:
     st.success("Someone clicked the button.", icon ="✅" )
+
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)

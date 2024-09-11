@@ -12,7 +12,7 @@ st.write(
 
 
 cnx=st.connection("snowflake")
-session = cmx.session ()
+session = cnx.session ()
 my_dataframe = session.table('smoothies.public.orders').select(col('ingredients'),col('name_on_order'),col('ORDER_FILLED'))
 #my_dataframe = session.table('smoothies.public.fruit_options').select(col('FRUIT_NAME'))
 editable_df = st.data_editor(my_dataframe)

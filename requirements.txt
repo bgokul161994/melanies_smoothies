@@ -2,5 +2,4 @@
 snowflake-snowpark-python
 streamlit
 requests
-python=3.8.*
 snowflake
